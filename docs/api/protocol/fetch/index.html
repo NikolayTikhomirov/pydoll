@@ -11,25 +11,30 @@
         <link rel="canonical" href="https://pydoll.tech/docs/api/protocol/fetch/">
       
       
-        <link rel="prev" href="../dom/">
       
-      
-        <link rel="next" href="../input/">
-      
-      
-      <link rel="icon" href="../../../images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
-    
-    
-      
-        <title>Fetch - Pydoll - Async Web Automation Library</title>
-      
-    
-    
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.7e37652d.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+          <link rel="alternate" href="/docs/" hreflang="en">
+        
+          <link rel="alternate" href="/docs/pt/" hreflang="pt">
+        
+          <link rel="alternate" href="/docs/zh/" hreflang="zh">
+        
+      
+      
+      <link rel="icon" href="../../../resources/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
+    
+    
+      
+        <title>Fetch Protocol - Pydoll - Async Web Automation Library</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.fb2fffe2.min.css">
       
       
 
@@ -43,16 +48,18 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chivo:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Chivo";--md-code-font:"JetBrains Mono"}</style>
       
     
     
       <link rel="stylesheet" href="../../../assets/_mkdocstrings.css">
     
-      <link rel="stylesheet" href="../../../stylesheets/termynal.css">
+      <link rel="stylesheet" href="../../../resources/stylesheets/termynal.css">
     
-      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../resources/stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../../resources/stylesheets/landing-theme.css">
     
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -60,13 +67,10 @@
 
     
     
-    
   </head>
   
   
     
-    
-      
     
     
     
@@ -94,7 +98,7 @@
 
   
 
-<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+<header class="md-header md-header--landing md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../../.." title="Pydoll - Async Web Automation Library" class="md-header__button md-logo" aria-label="Pydoll - Async Web Automation Library" data-md-component="logo">
       
@@ -102,6 +106,7 @@
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 15H6l7-14v8h5l-7 14z"/></svg>
 
     </a>
+    <span class="md-header__docs-chip">docs</span>
     <label class="md-header__button md-icon" for="__drawer">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
@@ -109,48 +114,18 @@
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
-          <span class="md-ellipsis">
-            Pydoll - Async Web Automation Library
-          </span>
+          <span class="md-ellipsis">Pydoll - Async Web Automation Library</span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
-            
-              Fetch
-            
+            Fetch Protocol
           </span>
         </div>
       </div>
     </div>
     
       
-        <form class="md-header__option" data-md-component="palette">
-  
     
-    
-    
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="indigo"  aria-label="Dark Mode"  type="radio" name="__palette" id="__palette_0">
-    
-      <label class="md-header__button md-icon" title="Dark Mode" for="__palette_1" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
-      </label>
-    
-  
-    
-    
-    
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo"  aria-label="Light Mode"  type="radio" name="__palette" id="__palette_1">
-    
-      <label class="md-header__button md-icon" title="Light Mode" for="__palette_0" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
-      </label>
-    
-  
-</form>
-      
-    
-    
-      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
       <div class="md-header__option">
@@ -165,6 +140,12 @@
           <li class="md-select__item">
             <a href="/docs/" hreflang="en" class="md-select__link">
               English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/docs/pt/" hreflang="pt" class="md-select__link">
+              Português (BR)
             </a>
           </li>
         
@@ -227,7 +208,7 @@
         <a href="https://github.com/autoscrape-labs/pydoll" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
   </div>
   <div class="md-source__repository">
     autoscrape-labs/pydoll
@@ -235,6 +216,7 @@
 </a>
       </div>
     
+    <a class="md-header__cta" href="../../../getting-started/">Get started</a>
   </nav>
   
     
@@ -267,17 +249,86 @@
   
   
   
-    <li class="md-tabs__item">
-      <a href="../../../features/" class="md-tabs__link">
-        
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../getting-started/" class="md-tabs__link">
+          
   
   
     
   
-  Features
+  Getting Started
 
-      </a>
-    </li>
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../basics/async-python/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Basics
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../guides/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Guides
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../stealth/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Stealth
+
+        </a>
+      </li>
+    
   
 
       
@@ -307,12 +358,10 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
+      <li class="md-tabs__item">
         <a href="../../" class="md-tabs__link">
           
   
@@ -368,7 +417,7 @@
       <a href="https://github.com/autoscrape-labs/pydoll" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
   </div>
   <div class="md-source__repository">
     autoscrape-labs/pydoll
@@ -390,9 +439,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Pydoll
+  
+
     
   </span>
+  
   
 
       </a>
@@ -406,18 +460,332 @@
   
   
   
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Getting Started
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../../../features/" class="md-nav__link">
+      <a href="../../../getting-started/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Features
+    
+  
+    Installation
+  
+
     
   </span>
   
+  
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../first-automation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Your first automation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../playwright/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bring your Playwright script
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../migrating/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Migrating from Selenium & Playwright
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../upgrading/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Upgrading to Pydoll 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Basics
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Basics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../basics/async-python/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Async Python in practice
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../basics/selectors/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Selectors, CSS and XPath
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -433,8 +801,6 @@
       
         
           
-        
-      
         
       
         
@@ -466,33 +832,42 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../deep-dive/" class="md-nav__link ">
+            <a href="../../../guides/" class="md-nav__link ">
               
   
   
   <span class="md-ellipsis">
-    Deep Dive
+    
+  
+    Guides
+  
+
     
   </span>
+  
   
 
             </a>
             
               
-              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
-            Deep Dive
+            
+  
+    Guides
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -505,14 +880,109 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../deep-dive/cdp/" class="md-nav__link">
+      <a href="../../../guides/core-concepts/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Chrome DevTools Protocol
+    
+  
+    Core concepts
+  
+
     
   </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Finding and extracting
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Finding and extracting
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guides/element-finding/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Element finding
+  
+
+    
+  </span>
+  
   
 
       </a>
@@ -528,14 +998,19 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../deep-dive/connection-layer/" class="md-nav__link">
+      <a href="../../../guides/dom-traversal/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    The Connection Layer
+    
+  
+    DOM traversal
+  
+
     
   </span>
+  
   
 
       </a>
@@ -551,14 +1026,121 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../deep-dive/browser-domain/" class="md-nav__link">
+      <a href="../../../guides/structured-extraction/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    The Browser Domain
+    
+  
+    Structured extraction
+  
+
     
   </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Interacting
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Interacting
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guides/keyboard/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Keyboard
+  
+
+    
+  </span>
+  
   
 
       </a>
@@ -574,14 +1156,19 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../deep-dive/tab-domain/" class="md-nav__link">
+      <a href="../../../guides/mouse/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    The Tab Domain
+    
+  
+    Mouse
+  
+
     
   </span>
+  
   
 
       </a>
@@ -597,14 +1184,19 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../deep-dive/find-elements-mixin/" class="md-nav__link">
+      <a href="../../../guides/file-operations/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    The Find Elements Mixin
+    
+  
+    File operations
+  
+
     
   </span>
+  
   
 
       </a>
@@ -620,14 +1212,19 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../deep-dive/webelement-domain/" class="md-nav__link">
+      <a href="../../../guides/iframes/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    The WebElement Domain
+    
+  
+    Iframes
+  
+
     
   </span>
+  
   
 
       </a>
@@ -643,14 +1240,119 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../deep-dive/event-system/" class="md-nav__link">
+      <a href="../../../guides/screenshots-and-pdfs/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    The Event System
+    
+  
+    Screenshots and PDFs
+  
+
     
   </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_5" id="__nav_4_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Network
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Network
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guides/network-monitoring/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Network monitoring
+  
+
+    
+  </span>
+  
   
 
       </a>
@@ -666,14 +1368,801 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../deep-dive/network-capabilities/" class="md-nav__link">
+      <a href="../../../guides/request-interception/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Network Capabilities
+    
+  
+    Request interception
+  
+
     
   </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guides/http-requests/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Browser-context HTTP requests
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guides/network-recording/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    HAR recording
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_6" id="__nav_4_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Managing the browser
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Managing the browser
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guides/tabs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tabs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guides/browser-contexts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Browser contexts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guides/cookies-and-sessions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cookies and sessions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guides/browser-options/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Browser options
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guides/browser-preferences/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Browser preferences
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guides/proxies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Proxies
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guides/remote-connections/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Remote connections
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_7" id="__nav_4_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reacting to events
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Reacting to events
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guides/waiting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Waiting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guides/events/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Events
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guides/retrying/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Retrying
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_8" id="__nav_4_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Coming from Playwright
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Coming from Playwright
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guides/playwright-api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Playwright API
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../stealth/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stealth
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Stealth
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../stealth/evasion-techniques/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Evasion techniques
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../stealth/human-like-interactions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Human-like interactions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../stealth/captcha-bypass/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Captcha bypass
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../stealth/fingerprint-injection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fingerprint injection
+  
+
+    
+  </span>
+  
   
 
       </a>
@@ -693,7 +2182,108 @@
       
   
   
+  
+  
     
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../deep-dive/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deep Dive
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Deep Dive
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../deep-dive/cdp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chrome DevTools Protocol
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
   
   
   
@@ -720,19 +2310,477 @@
     
     
       
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
         
         
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../deep-dive/network/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Network & proxies
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6_3" id="__nav_6_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Network & proxies
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../deep-dive/network/network-fundamentals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Network fundamentals
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../deep-dive/network/http-proxies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    HTTP/HTTPS proxies
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../deep-dive/network/socks-proxies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SOCKS proxies
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../deep-dive/network/proxy-detection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Proxy detection
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../deep-dive/network/build-proxy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Building a proxy server
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../deep-dive/network/proxy-legal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Legal & ethical
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../deep-dive/fingerprinting/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fingerprinting
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6_4" id="__nav_6_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Fingerprinting
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../deep-dive/fingerprinting/network-fingerprinting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Network fingerprinting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../deep-dive/fingerprinting/browser-fingerprinting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Browser fingerprinting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../deep-dive/fingerprinting/behavioral-fingerprinting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Behavioral fingerprinting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../deep-dive/fingerprinting/auditing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Auditing a fingerprint
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
         
           
           <div class="md-nav__link md-nav__container">
@@ -741,24 +2789,33 @@
   
   
   <span class="md-ellipsis">
+    
+  
     API Reference
+  
+
     
   </span>
+  
   
 
             </a>
             
               
-              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="">
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_4">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
-            API Reference
+            
+  
+    API Reference
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -783,46 +2840,50 @@
       
         
       
-        
-      
     
     
     
       
       
         
-          
-          
-        
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_2" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7_2" >
         
           
-          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_7_2" id="__nav_7_2_label" tabindex="0">
             
   
   
   <span class="md-ellipsis">
+    
+  
     Browser
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_2">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_2">
             <span class="md-nav__icon md-icon"></span>
-            Browser
+            
+  
+    Browser
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -838,9 +2899,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Chrome
+  
+
     
   </span>
+  
   
 
       </a>
@@ -861,9 +2927,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Edge
+  
+
     
   </span>
+  
   
 
       </a>
@@ -884,9 +2955,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Options
+  
+
     
   </span>
+  
   
 
       </a>
@@ -907,9 +2983,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Tab
+  
+
     
   </span>
+  
   
 
       </a>
@@ -930,32 +3011,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Requests
+  
+
     
   </span>
   
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../browser/managers/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Managers
-    
-  </span>
   
 
       </a>
@@ -991,38 +3054,44 @@
       
       
         
-          
-          
-        
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_3" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7_3" >
         
           
-          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_7_3" id="__nav_7_3_label" tabindex="0">
             
   
   
   <span class="md-ellipsis">
+    
+  
     Elements
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_3">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_3">
             <span class="md-nav__icon md-icon"></span>
-            Elements
+            
+  
+    Elements
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1038,9 +3107,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     WebElement
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1056,14 +3130,19 @@
   
   
     <li class="md-nav__item">
-      <a href="../../elements/mixins/" class="md-nav__link">
+      <a href="../../elements/shadow_root/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Mixins
+    
+  
+    ShadowRoot
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1086,53 +3165,27 @@
   
   
   
-    
-    
-      
+    <li class="md-nav__item">
+      <a href="../../extraction/" class="md-nav__link">
         
-      
-        
-      
-    
-    
-    
-      
-      
-        
-          
-          
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_4" >
-        
-          
-          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="">
-            
   
   
   <span class="md-ellipsis">
-    Connection
+    
+  
+    Extraction
+  
+
     
   </span>
   
+  
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_4">
-            <span class="md-nav__icon md-icon"></span>
-            Connection
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -1146,9 +3199,14 @@
   
   
   <span class="md-ellipsis">
-    Connection Handler
+    
+  
+    Connection
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1163,57 +3221,8 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../connection/managers/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Managers
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
     
     
-      
-        
-          
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
       
         
       
@@ -1225,1811 +3234,44 @@
       
       
         
-          
-          
-        
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_5" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7_6" >
         
           
-          <div class="md-nav__link md-nav__container">
-            <a href="../../commands/" class="md-nav__link ">
-              
-  
-  
-  <span class="md-ellipsis">
-    Commands
-    
-  </span>
-  
-
-            </a>
-            
-              
-              <label class="md-nav__link " for="__nav_4_5" id="__nav_4_5_label" tabindex="">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
-          </div>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_5">
-            <span class="md-nav__icon md-icon"></span>
-            Commands
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../commands/browser/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Browser
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../commands/dom/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    DOM
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../commands/input/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Input
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../commands/network/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Network
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../commands/page/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Page
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../commands/runtime/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Runtime
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../commands/storage/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Storage
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../commands/target/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Target
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../commands/fetch/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Fetch
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-        
-          
-          
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_6" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_4_6" id="__nav_4_6_label" tabindex="">
+          <label class="md-nav__link" for="__nav_7_6" id="__nav_7_6_label" tabindex="0">
             
   
   
   <span class="md-ellipsis">
-    Protocol
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_6_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_4_6">
-            <span class="md-nav__icon md-icon"></span>
-            Protocol
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../base/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Base Types
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../browser/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Browser
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../dom/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    DOM
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
     
   
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Fetch
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  
-  <span class="md-ellipsis">
-    Fetch
-    
-  </span>
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#methods" class="md-nav__link">
-    <span class="md-ellipsis">
-      Methods
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.methods" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-module"></code>&nbsp;methods
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label=" methods">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.methods.RequestId" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;RequestId
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.methods.GetResponseBodyResponse" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;GetResponseBodyResponse
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.methods.TakeResponseBodyAsStreamResponse" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;TakeResponseBodyAsStreamResponse
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.methods.ContinueRequestCommand" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;ContinueRequestCommand
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.methods.ContinueResponseCommand" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;ContinueResponseCommand
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.methods.ContinueWithAuthCommand" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;ContinueWithAuthCommand
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.methods.DisableCommand" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;DisableCommand
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.methods.EnableCommand" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;EnableCommand
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.methods.FailRequestCommand" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;FailRequestCommand
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.methods.FulfillRequestCommand" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;FulfillRequestCommand
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.methods.GetResponseBodyCommand" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;GetResponseBodyCommand
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.methods.TakeResponseBodyAsStreamCommand" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;TakeResponseBodyAsStreamCommand
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.methods.FetchMethod" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;FetchMethod
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label=" FetchMethod">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.methods.FetchMethod.CONTINUE_REQUEST" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;CONTINUE_REQUEST
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.methods.FetchMethod.CONTINUE_RESPONSE" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;CONTINUE_RESPONSE
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.methods.FetchMethod.CONTINUE_WITH_AUTH" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;CONTINUE_WITH_AUTH
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.methods.FetchMethod.DISABLE" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;DISABLE
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.methods.FetchMethod.ENABLE" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;ENABLE
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.methods.FetchMethod.FAIL_REQUEST" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;FAIL_REQUEST
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.methods.FetchMethod.FULFILL_REQUEST" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;FULFILL_REQUEST
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.methods.FetchMethod.GET_RESPONSE_BODY" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;GET_RESPONSE_BODY
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.methods.FetchMethod.TAKE_RESPONSE_BODY_AS_STREAM" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;TAKE_RESPONSE_BODY_AS_STREAM
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.methods.EnableParams" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;EnableParams
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label=" EnableParams">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.methods.EnableParams.patterns" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;patterns
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.methods.EnableParams.handleAuthRequests" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;handleAuthRequests
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.methods.FailRequestParams" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;FailRequestParams
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label=" FailRequestParams">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.methods.FailRequestParams.requestId" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;requestId
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.methods.FailRequestParams.errorReason" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;errorReason
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.methods.FulfillRequestParams" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;FulfillRequestParams
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label=" FulfillRequestParams">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.methods.FulfillRequestParams.requestId" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;requestId
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.methods.FulfillRequestParams.responseCode" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;responseCode
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.methods.FulfillRequestParams.responseHeaders" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;responseHeaders
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.methods.FulfillRequestParams.binaryResponseHeaders" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;binaryResponseHeaders
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.methods.FulfillRequestParams.body" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;body
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.methods.FulfillRequestParams.responsePhrase" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;responsePhrase
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.methods.ContinueRequestParams" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;ContinueRequestParams
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label=" ContinueRequestParams">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.methods.ContinueRequestParams.requestId" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;requestId
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.methods.ContinueRequestParams.url" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;url
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.methods.ContinueRequestParams.method" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;method
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.methods.ContinueRequestParams.postData" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;postData
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.methods.ContinueRequestParams.headers" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;headers
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.methods.ContinueRequestParams.interceptResponse" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;interceptResponse
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.methods.ContinueWithAuthParams" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;ContinueWithAuthParams
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label=" ContinueWithAuthParams">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.methods.ContinueWithAuthParams.requestId" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;requestId
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.methods.ContinueWithAuthParams.authChallengeResponse" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;authChallengeResponse
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.methods.ContinueResponseParams" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;ContinueResponseParams
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label=" ContinueResponseParams">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.methods.ContinueResponseParams.requestId" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;requestId
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.methods.ContinueResponseParams.responseCode" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;responseCode
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.methods.ContinueResponseParams.responsePhrase" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;responsePhrase
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.methods.ContinueResponseParams.responseHeaders" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;responseHeaders
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.methods.ContinueResponseParams.binaryResponseHeaders" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;binaryResponseHeaders
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.methods.GetResponseBodyParams" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;GetResponseBodyParams
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label=" GetResponseBodyParams">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.methods.GetResponseBodyParams.requestId" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;requestId
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.methods.TakeResponseBodyAsStreamParams" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;TakeResponseBodyAsStreamParams
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label=" TakeResponseBodyAsStreamParams">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.methods.TakeResponseBodyAsStreamParams.requestId" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;requestId
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.methods.GetResponseBodyResult" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;GetResponseBodyResult
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label=" GetResponseBodyResult">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.methods.GetResponseBodyResult.body" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;body
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.methods.GetResponseBodyResult.base64Encoded" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;base64Encoded
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.methods.TakeResponseBodyAsStreamResult" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;TakeResponseBodyAsStreamResult
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label=" TakeResponseBodyAsStreamResult">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.methods.TakeResponseBodyAsStreamResult.stream" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;stream
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#events" class="md-nav__link">
-    <span class="md-ellipsis">
-      Events
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.events" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-module"></code>&nbsp;events
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label=" events">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.events.RequestPausedEvent" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;RequestPausedEvent
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.events.AuthRequiredEvent" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;AuthRequiredEvent
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.events.FetchEvent" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;FetchEvent
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label=" FetchEvent">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.events.FetchEvent.AUTH_REQUIRED" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;AUTH_REQUIRED
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.events.FetchEvent.REQUEST_PAUSED" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;REQUEST_PAUSED
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.events.AuthRequiredEventParams" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;AuthRequiredEventParams
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label=" AuthRequiredEventParams">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.events.AuthRequiredEventParams.requestId" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;requestId
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.events.AuthRequiredEventParams.request" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;request
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.events.AuthRequiredEventParams.frameId" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;frameId
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.events.AuthRequiredEventParams.resourceType" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;resourceType
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.events.AuthRequiredEventParams.authChallenge" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;authChallenge
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.events.RequestPausedEventParams" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;RequestPausedEventParams
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label=" RequestPausedEventParams">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.events.RequestPausedEventParams.requestId" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;requestId
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.events.RequestPausedEventParams.request" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;request
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.events.RequestPausedEventParams.frameId" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;frameId
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.events.RequestPausedEventParams.resourceType" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;resourceType
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.events.RequestPausedEventParams.responseErrorReason" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;responseErrorReason
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.events.RequestPausedEventParams.responseStatusCode" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;responseStatusCode
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.events.RequestPausedEventParams.responseStatusText" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;responseStatusText
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#types" class="md-nav__link">
-    <span class="md-ellipsis">
-      Types
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.types" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-module"></code>&nbsp;types
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label=" types">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.types.RequestStage" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;RequestStage
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label=" RequestStage">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.types.RequestStage.REQUEST" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;REQUEST
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.types.RequestStage.RESPONSE" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;RESPONSE
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.types.AuthChallengeSource" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;AuthChallengeSource
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label=" AuthChallengeSource">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.types.AuthChallengeSource.SERVER" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;SERVER
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.types.AuthChallengeSource.PROXY" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;PROXY
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.types.AuthChallengeResponseType" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;AuthChallengeResponseType
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label=" AuthChallengeResponseType">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.types.AuthChallengeResponseType.DEFAULT" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;DEFAULT
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.types.AuthChallengeResponseType.CANCEL_AUTH" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;CANCEL_AUTH
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.types.AuthChallengeResponseType.PROVIDE_CREDENTIALS" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;PROVIDE_CREDENTIALS
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.types.RequestPattern" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;RequestPattern
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label=" RequestPattern">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.types.RequestPattern.urlPattern" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;urlPattern
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.types.RequestPattern.resourceType" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;resourceType
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.types.RequestPattern.requestStage" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;requestStage
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.types.HeaderEntry" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;HeaderEntry
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label=" HeaderEntry">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.types.HeaderEntry.name" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;name
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.types.HeaderEntry.value" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;value
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.types.AuthChallenge" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;AuthChallenge
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label=" AuthChallenge">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.types.AuthChallenge.source" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;source
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.types.AuthChallenge.origin" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;origin
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.types.AuthChallenge.scheme" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;scheme
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.types.AuthChallenge.realm" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;realm
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.types.AuthChallengeResponse" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;AuthChallengeResponse
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label=" AuthChallengeResponse">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.types.AuthChallengeResponse.response" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;response
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.types.AuthChallengeResponse.username" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;username
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pydoll.protocol.fetch.types.AuthChallengeResponse.password" class="md-nav__link">
-    <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;password
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../input/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Input
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../network/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Network
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../page/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Page
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../runtime/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Runtime
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../storage/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Storage
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../target/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Target
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-        
-          
-          
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_7" >
-        
-          
-          <label class="md-nav__link" for="__nav_4_7" id="__nav_4_7_label" tabindex="">
-            
-  
-  
-  <span class="md-ellipsis">
     Core
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_7">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_6">
             <span class="md-nav__icon md-icon"></span>
-            Core
+            
+  
+    Core
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -3045,9 +3287,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Constants
+  
+
     
   </span>
+  
   
 
       </a>
@@ -3068,32 +3315,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Exceptions
+  
+
     
   </span>
   
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../core/utils/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Utils
-    
-  </span>
   
 
       </a>
@@ -3146,7 +3375,9 @@
         <li class="md-nav__item">
   <a href="#methods" class="md-nav__link">
     <span class="md-ellipsis">
-      Methods
+      
+        Methods
+      
     </span>
   </a>
   
@@ -3155,7 +3386,9 @@
         <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.methods" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-module"></code>&nbsp;methods
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-module"></code>&nbsp;methods
+      
     </span>
   </a>
   
@@ -3165,7 +3398,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.methods.RequestId" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;RequestId
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;RequestId
+      
     </span>
   </a>
   
@@ -3174,7 +3409,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.methods.GetResponseBodyResponse" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;GetResponseBodyResponse
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;GetResponseBodyResponse
+      
     </span>
   </a>
   
@@ -3183,7 +3420,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.methods.TakeResponseBodyAsStreamResponse" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;TakeResponseBodyAsStreamResponse
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;TakeResponseBodyAsStreamResponse
+      
     </span>
   </a>
   
@@ -3192,7 +3431,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.methods.ContinueRequestCommand" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;ContinueRequestCommand
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;ContinueRequestCommand
+      
     </span>
   </a>
   
@@ -3201,7 +3442,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.methods.ContinueResponseCommand" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;ContinueResponseCommand
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;ContinueResponseCommand
+      
     </span>
   </a>
   
@@ -3210,7 +3453,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.methods.ContinueWithAuthCommand" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;ContinueWithAuthCommand
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;ContinueWithAuthCommand
+      
     </span>
   </a>
   
@@ -3219,7 +3464,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.methods.DisableCommand" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;DisableCommand
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;DisableCommand
+      
     </span>
   </a>
   
@@ -3228,7 +3475,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.methods.EnableCommand" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;EnableCommand
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;EnableCommand
+      
     </span>
   </a>
   
@@ -3237,7 +3486,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.methods.FailRequestCommand" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;FailRequestCommand
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;FailRequestCommand
+      
     </span>
   </a>
   
@@ -3246,7 +3497,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.methods.FulfillRequestCommand" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;FulfillRequestCommand
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;FulfillRequestCommand
+      
     </span>
   </a>
   
@@ -3255,7 +3508,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.methods.GetResponseBodyCommand" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;GetResponseBodyCommand
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;GetResponseBodyCommand
+      
     </span>
   </a>
   
@@ -3264,7 +3519,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.methods.TakeResponseBodyAsStreamCommand" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;TakeResponseBodyAsStreamCommand
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;TakeResponseBodyAsStreamCommand
+      
     </span>
   </a>
   
@@ -3273,7 +3530,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.methods.FetchMethod" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;FetchMethod
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;FetchMethod
+      
     </span>
   </a>
   
@@ -3283,7 +3542,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.methods.FetchMethod.CONTINUE_REQUEST" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;CONTINUE_REQUEST
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;CONTINUE_REQUEST
+      
     </span>
   </a>
   
@@ -3292,7 +3553,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.methods.FetchMethod.CONTINUE_RESPONSE" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;CONTINUE_RESPONSE
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;CONTINUE_RESPONSE
+      
     </span>
   </a>
   
@@ -3301,7 +3564,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.methods.FetchMethod.CONTINUE_WITH_AUTH" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;CONTINUE_WITH_AUTH
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;CONTINUE_WITH_AUTH
+      
     </span>
   </a>
   
@@ -3310,7 +3575,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.methods.FetchMethod.DISABLE" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;DISABLE
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;DISABLE
+      
     </span>
   </a>
   
@@ -3319,7 +3586,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.methods.FetchMethod.ENABLE" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;ENABLE
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;ENABLE
+      
     </span>
   </a>
   
@@ -3328,7 +3597,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.methods.FetchMethod.FAIL_REQUEST" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;FAIL_REQUEST
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;FAIL_REQUEST
+      
     </span>
   </a>
   
@@ -3337,7 +3608,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.methods.FetchMethod.FULFILL_REQUEST" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;FULFILL_REQUEST
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;FULFILL_REQUEST
+      
     </span>
   </a>
   
@@ -3346,7 +3619,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.methods.FetchMethod.GET_RESPONSE_BODY" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;GET_RESPONSE_BODY
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;GET_RESPONSE_BODY
+      
     </span>
   </a>
   
@@ -3355,7 +3630,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.methods.FetchMethod.TAKE_RESPONSE_BODY_AS_STREAM" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;TAKE_RESPONSE_BODY_AS_STREAM
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;TAKE_RESPONSE_BODY_AS_STREAM
+      
     </span>
   </a>
   
@@ -3369,7 +3646,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.methods.EnableParams" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;EnableParams
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;EnableParams
+      
     </span>
   </a>
   
@@ -3379,7 +3658,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.methods.EnableParams.patterns" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;patterns
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;patterns
+      
     </span>
   </a>
   
@@ -3388,7 +3669,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.methods.EnableParams.handleAuthRequests" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;handleAuthRequests
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;handleAuthRequests
+      
     </span>
   </a>
   
@@ -3402,7 +3685,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.methods.FailRequestParams" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;FailRequestParams
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;FailRequestParams
+      
     </span>
   </a>
   
@@ -3412,7 +3697,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.methods.FailRequestParams.requestId" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;requestId
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;requestId
+      
     </span>
   </a>
   
@@ -3421,7 +3708,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.methods.FailRequestParams.errorReason" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;errorReason
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;errorReason
+      
     </span>
   </a>
   
@@ -3435,7 +3724,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.methods.FulfillRequestParams" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;FulfillRequestParams
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;FulfillRequestParams
+      
     </span>
   </a>
   
@@ -3445,7 +3736,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.methods.FulfillRequestParams.requestId" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;requestId
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;requestId
+      
     </span>
   </a>
   
@@ -3454,7 +3747,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.methods.FulfillRequestParams.responseCode" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;responseCode
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;responseCode
+      
     </span>
   </a>
   
@@ -3463,7 +3758,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.methods.FulfillRequestParams.responseHeaders" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;responseHeaders
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;responseHeaders
+      
     </span>
   </a>
   
@@ -3472,7 +3769,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.methods.FulfillRequestParams.binaryResponseHeaders" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;binaryResponseHeaders
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;binaryResponseHeaders
+      
     </span>
   </a>
   
@@ -3481,7 +3780,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.methods.FulfillRequestParams.body" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;body
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;body
+      
     </span>
   </a>
   
@@ -3490,7 +3791,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.methods.FulfillRequestParams.responsePhrase" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;responsePhrase
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;responsePhrase
+      
     </span>
   </a>
   
@@ -3504,7 +3807,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.methods.ContinueRequestParams" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;ContinueRequestParams
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;ContinueRequestParams
+      
     </span>
   </a>
   
@@ -3514,7 +3819,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.methods.ContinueRequestParams.requestId" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;requestId
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;requestId
+      
     </span>
   </a>
   
@@ -3523,7 +3830,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.methods.ContinueRequestParams.url" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;url
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;url
+      
     </span>
   </a>
   
@@ -3532,7 +3841,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.methods.ContinueRequestParams.method" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;method
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;method
+      
     </span>
   </a>
   
@@ -3541,7 +3852,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.methods.ContinueRequestParams.postData" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;postData
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;postData
+      
     </span>
   </a>
   
@@ -3550,7 +3863,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.methods.ContinueRequestParams.headers" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;headers
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;headers
+      
     </span>
   </a>
   
@@ -3559,7 +3874,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.methods.ContinueRequestParams.interceptResponse" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;interceptResponse
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;interceptResponse
+      
     </span>
   </a>
   
@@ -3573,7 +3890,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.methods.ContinueWithAuthParams" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;ContinueWithAuthParams
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;ContinueWithAuthParams
+      
     </span>
   </a>
   
@@ -3583,7 +3902,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.methods.ContinueWithAuthParams.requestId" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;requestId
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;requestId
+      
     </span>
   </a>
   
@@ -3592,7 +3913,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.methods.ContinueWithAuthParams.authChallengeResponse" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;authChallengeResponse
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;authChallengeResponse
+      
     </span>
   </a>
   
@@ -3606,7 +3929,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.methods.ContinueResponseParams" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;ContinueResponseParams
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;ContinueResponseParams
+      
     </span>
   </a>
   
@@ -3616,7 +3941,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.methods.ContinueResponseParams.requestId" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;requestId
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;requestId
+      
     </span>
   </a>
   
@@ -3625,7 +3952,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.methods.ContinueResponseParams.responseCode" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;responseCode
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;responseCode
+      
     </span>
   </a>
   
@@ -3634,7 +3963,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.methods.ContinueResponseParams.responsePhrase" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;responsePhrase
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;responsePhrase
+      
     </span>
   </a>
   
@@ -3643,7 +3974,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.methods.ContinueResponseParams.responseHeaders" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;responseHeaders
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;responseHeaders
+      
     </span>
   </a>
   
@@ -3652,7 +3985,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.methods.ContinueResponseParams.binaryResponseHeaders" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;binaryResponseHeaders
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;binaryResponseHeaders
+      
     </span>
   </a>
   
@@ -3666,7 +4001,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.methods.GetResponseBodyParams" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;GetResponseBodyParams
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;GetResponseBodyParams
+      
     </span>
   </a>
   
@@ -3676,7 +4013,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.methods.GetResponseBodyParams.requestId" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;requestId
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;requestId
+      
     </span>
   </a>
   
@@ -3690,7 +4029,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.methods.TakeResponseBodyAsStreamParams" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;TakeResponseBodyAsStreamParams
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;TakeResponseBodyAsStreamParams
+      
     </span>
   </a>
   
@@ -3700,7 +4041,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.methods.TakeResponseBodyAsStreamParams.requestId" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;requestId
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;requestId
+      
     </span>
   </a>
   
@@ -3714,7 +4057,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.methods.GetResponseBodyResult" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;GetResponseBodyResult
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;GetResponseBodyResult
+      
     </span>
   </a>
   
@@ -3724,7 +4069,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.methods.GetResponseBodyResult.body" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;body
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;body
+      
     </span>
   </a>
   
@@ -3733,7 +4080,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.methods.GetResponseBodyResult.base64Encoded" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;base64Encoded
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;base64Encoded
+      
     </span>
   </a>
   
@@ -3747,7 +4096,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.methods.TakeResponseBodyAsStreamResult" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;TakeResponseBodyAsStreamResult
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;TakeResponseBodyAsStreamResult
+      
     </span>
   </a>
   
@@ -3757,7 +4108,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.methods.TakeResponseBodyAsStreamResult.stream" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;stream
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;stream
+      
     </span>
   </a>
   
@@ -3776,7 +4129,9 @@
         <li class="md-nav__item">
   <a href="#events" class="md-nav__link">
     <span class="md-ellipsis">
-      Events
+      
+        Events
+      
     </span>
   </a>
   
@@ -3785,7 +4140,9 @@
         <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.events" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-module"></code>&nbsp;events
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-module"></code>&nbsp;events
+      
     </span>
   </a>
   
@@ -3795,7 +4152,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.events.RequestPausedEvent" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;RequestPausedEvent
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;RequestPausedEvent
+      
     </span>
   </a>
   
@@ -3804,7 +4163,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.events.AuthRequiredEvent" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;AuthRequiredEvent
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;AuthRequiredEvent
+      
     </span>
   </a>
   
@@ -3813,7 +4174,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.events.FetchEvent" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;FetchEvent
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;FetchEvent
+      
     </span>
   </a>
   
@@ -3823,7 +4186,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.events.FetchEvent.AUTH_REQUIRED" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;AUTH_REQUIRED
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;AUTH_REQUIRED
+      
     </span>
   </a>
   
@@ -3832,7 +4197,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.events.FetchEvent.REQUEST_PAUSED" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;REQUEST_PAUSED
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;REQUEST_PAUSED
+      
     </span>
   </a>
   
@@ -3846,7 +4213,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.events.AuthRequiredEventParams" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;AuthRequiredEventParams
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;AuthRequiredEventParams
+      
     </span>
   </a>
   
@@ -3856,7 +4225,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.events.AuthRequiredEventParams.requestId" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;requestId
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;requestId
+      
     </span>
   </a>
   
@@ -3865,7 +4236,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.events.AuthRequiredEventParams.request" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;request
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;request
+      
     </span>
   </a>
   
@@ -3874,7 +4247,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.events.AuthRequiredEventParams.frameId" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;frameId
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;frameId
+      
     </span>
   </a>
   
@@ -3883,7 +4258,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.events.AuthRequiredEventParams.resourceType" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;resourceType
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;resourceType
+      
     </span>
   </a>
   
@@ -3892,7 +4269,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.events.AuthRequiredEventParams.authChallenge" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;authChallenge
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;authChallenge
+      
     </span>
   </a>
   
@@ -3906,7 +4285,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.events.RequestPausedEventParams" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;RequestPausedEventParams
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;RequestPausedEventParams
+      
     </span>
   </a>
   
@@ -3916,7 +4297,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.events.RequestPausedEventParams.requestId" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;requestId
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;requestId
+      
     </span>
   </a>
   
@@ -3925,7 +4308,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.events.RequestPausedEventParams.request" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;request
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;request
+      
     </span>
   </a>
   
@@ -3934,7 +4319,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.events.RequestPausedEventParams.frameId" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;frameId
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;frameId
+      
     </span>
   </a>
   
@@ -3943,7 +4330,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.events.RequestPausedEventParams.resourceType" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;resourceType
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;resourceType
+      
     </span>
   </a>
   
@@ -3952,7 +4341,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.events.RequestPausedEventParams.responseErrorReason" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;responseErrorReason
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;responseErrorReason
+      
     </span>
   </a>
   
@@ -3961,7 +4352,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.events.RequestPausedEventParams.responseStatusCode" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;responseStatusCode
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;responseStatusCode
+      
     </span>
   </a>
   
@@ -3970,7 +4363,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.events.RequestPausedEventParams.responseStatusText" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;responseStatusText
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;responseStatusText
+      
     </span>
   </a>
   
@@ -3989,7 +4384,9 @@
         <li class="md-nav__item">
   <a href="#types" class="md-nav__link">
     <span class="md-ellipsis">
-      Types
+      
+        Types
+      
     </span>
   </a>
   
@@ -3998,7 +4395,9 @@
         <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.types" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-module"></code>&nbsp;types
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-module"></code>&nbsp;types
+      
     </span>
   </a>
   
@@ -4008,7 +4407,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.types.RequestStage" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;RequestStage
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;RequestStage
+      
     </span>
   </a>
   
@@ -4018,7 +4419,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.types.RequestStage.REQUEST" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;REQUEST
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;REQUEST
+      
     </span>
   </a>
   
@@ -4027,7 +4430,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.types.RequestStage.RESPONSE" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;RESPONSE
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;RESPONSE
+      
     </span>
   </a>
   
@@ -4041,7 +4446,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.types.AuthChallengeSource" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;AuthChallengeSource
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;AuthChallengeSource
+      
     </span>
   </a>
   
@@ -4051,7 +4458,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.types.AuthChallengeSource.SERVER" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;SERVER
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;SERVER
+      
     </span>
   </a>
   
@@ -4060,7 +4469,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.types.AuthChallengeSource.PROXY" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;PROXY
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;PROXY
+      
     </span>
   </a>
   
@@ -4074,7 +4485,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.types.AuthChallengeResponseType" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;AuthChallengeResponseType
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;AuthChallengeResponseType
+      
     </span>
   </a>
   
@@ -4084,7 +4497,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.types.AuthChallengeResponseType.DEFAULT" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;DEFAULT
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;DEFAULT
+      
     </span>
   </a>
   
@@ -4093,7 +4508,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.types.AuthChallengeResponseType.CANCEL_AUTH" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;CANCEL_AUTH
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;CANCEL_AUTH
+      
     </span>
   </a>
   
@@ -4102,7 +4519,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.types.AuthChallengeResponseType.PROVIDE_CREDENTIALS" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;PROVIDE_CREDENTIALS
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;PROVIDE_CREDENTIALS
+      
     </span>
   </a>
   
@@ -4116,7 +4535,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.types.RequestPattern" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;RequestPattern
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;RequestPattern
+      
     </span>
   </a>
   
@@ -4126,7 +4547,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.types.RequestPattern.urlPattern" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;urlPattern
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;urlPattern
+      
     </span>
   </a>
   
@@ -4135,7 +4558,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.types.RequestPattern.resourceType" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;resourceType
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;resourceType
+      
     </span>
   </a>
   
@@ -4144,7 +4569,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.types.RequestPattern.requestStage" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;requestStage
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;requestStage
+      
     </span>
   </a>
   
@@ -4158,7 +4585,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.types.HeaderEntry" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;HeaderEntry
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;HeaderEntry
+      
     </span>
   </a>
   
@@ -4168,7 +4597,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.types.HeaderEntry.name" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;name
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;name
+      
     </span>
   </a>
   
@@ -4177,7 +4608,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.types.HeaderEntry.value" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;value
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;value
+      
     </span>
   </a>
   
@@ -4191,7 +4624,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.types.AuthChallenge" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;AuthChallenge
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;AuthChallenge
+      
     </span>
   </a>
   
@@ -4201,7 +4636,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.types.AuthChallenge.source" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;source
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;source
+      
     </span>
   </a>
   
@@ -4210,7 +4647,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.types.AuthChallenge.origin" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;origin
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;origin
+      
     </span>
   </a>
   
@@ -4219,7 +4658,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.types.AuthChallenge.scheme" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;scheme
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;scheme
+      
     </span>
   </a>
   
@@ -4228,7 +4669,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.types.AuthChallenge.realm" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;realm
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;realm
+      
     </span>
   </a>
   
@@ -4242,7 +4685,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.types.AuthChallengeResponse" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;AuthChallengeResponse
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;AuthChallengeResponse
+      
     </span>
   </a>
   
@@ -4252,7 +4697,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.types.AuthChallengeResponse.response" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;response
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;response
+      
     </span>
   </a>
   
@@ -4261,7 +4708,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.types.AuthChallengeResponse.username" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;username
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;username
+      
     </span>
   </a>
   
@@ -4270,7 +4719,9 @@
           <li class="md-nav__item">
   <a href="#pydoll.protocol.fetch.types.AuthChallengeResponse.password" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;password
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-attribute"></code>&nbsp;password
+      
     </span>
   </a>
   
@@ -4296,6 +4747,15 @@
           
           
             <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+              
               <article class="md-content__inner md-typeset">
                 
                   
@@ -4331,7 +4791,7 @@
 
 
 
-  <div class="doc doc-children">
+<div class="doc doc-children">
 
 
 
@@ -4631,6 +5091,7 @@
               Bases: <code><span title="str">str</span></code>, <code><span title="enum.Enum">Enum</span></code></p>
 
 
+
         <p>Fetch domain method names.</p>
 
 
@@ -4643,7 +5104,7 @@
 
 
 
-  <div class="doc doc-children">
+<div class="doc doc-children">
 
 
 
@@ -4665,7 +5126,7 @@
   </span>
 
 </h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">CONTINUE_REQUEST</span> <span class="o">=</span> <span class="s1">&#39;Fetch.continueRequest&#39;</span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">CONTINUE_REQUEST</span> <span class="o">=</span> <span class="s1">'Fetch.continueRequest'</span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
@@ -4688,7 +5149,7 @@
   </span>
 
 </h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">CONTINUE_RESPONSE</span> <span class="o">=</span> <span class="s1">&#39;Fetch.continueResponse&#39;</span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">CONTINUE_RESPONSE</span> <span class="o">=</span> <span class="s1">'Fetch.continueResponse'</span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
@@ -4711,7 +5172,7 @@
   </span>
 
 </h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">CONTINUE_WITH_AUTH</span> <span class="o">=</span> <span class="s1">&#39;Fetch.continueWithAuth&#39;</span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">CONTINUE_WITH_AUTH</span> <span class="o">=</span> <span class="s1">'Fetch.continueWithAuth'</span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
@@ -4734,7 +5195,7 @@
   </span>
 
 </h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">DISABLE</span> <span class="o">=</span> <span class="s1">&#39;Fetch.disable&#39;</span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">DISABLE</span> <span class="o">=</span> <span class="s1">'Fetch.disable'</span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
@@ -4757,7 +5218,7 @@
   </span>
 
 </h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">ENABLE</span> <span class="o">=</span> <span class="s1">&#39;Fetch.enable&#39;</span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">ENABLE</span> <span class="o">=</span> <span class="s1">'Fetch.enable'</span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
@@ -4780,7 +5241,7 @@
   </span>
 
 </h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">FAIL_REQUEST</span> <span class="o">=</span> <span class="s1">&#39;Fetch.failRequest&#39;</span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">FAIL_REQUEST</span> <span class="o">=</span> <span class="s1">'Fetch.failRequest'</span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
@@ -4803,7 +5264,7 @@
   </span>
 
 </h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">FULFILL_REQUEST</span> <span class="o">=</span> <span class="s1">&#39;Fetch.fulfillRequest&#39;</span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">FULFILL_REQUEST</span> <span class="o">=</span> <span class="s1">'Fetch.fulfillRequest'</span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
@@ -4826,7 +5287,7 @@
   </span>
 
 </h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">GET_RESPONSE_BODY</span> <span class="o">=</span> <span class="s1">&#39;Fetch.getResponseBody&#39;</span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">GET_RESPONSE_BODY</span> <span class="o">=</span> <span class="s1">'Fetch.getResponseBody'</span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
@@ -4849,7 +5310,7 @@
   </span>
 
 </h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">TAKE_RESPONSE_BODY_AS_STREAM</span> <span class="o">=</span> <span class="s1">&#39;Fetch.takeResponseBodyAsStream&#39;</span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">TAKE_RESPONSE_BODY_AS_STREAM</span> <span class="o">=</span> <span class="s1">'Fetch.takeResponseBodyAsStream'</span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
@@ -4885,6 +5346,7 @@
               Bases: <code><span title="typing_extensions.TypedDict">TypedDict</span></code></p>
 
 
+
         <p>Parameters for enabling the fetch domain.</p>
 
 
@@ -4897,7 +5359,7 @@
 
 
 
-  <div class="doc doc-children">
+<div class="doc doc-children">
 
 
 
@@ -4976,6 +5438,7 @@
               Bases: <code><span title="typing_extensions.TypedDict">TypedDict</span></code></p>
 
 
+
         <p>Parameters for failing a request.</p>
 
 
@@ -4988,7 +5451,7 @@
 
 
 
-  <div class="doc doc-children">
+<div class="doc doc-children">
 
 
 
@@ -5067,6 +5530,7 @@
               Bases: <code><span title="typing_extensions.TypedDict">TypedDict</span></code></p>
 
 
+
         <p>Parameters for fulfilling a request.</p>
 
 
@@ -5079,7 +5543,7 @@
 
 
 
-  <div class="doc doc-children">
+<div class="doc doc-children">
 
 
 
@@ -5246,6 +5710,7 @@
               Bases: <code><span title="typing_extensions.TypedDict">TypedDict</span></code></p>
 
 
+
         <p>Parameters for continuing a request.</p>
 
 
@@ -5258,7 +5723,7 @@
 
 
 
-  <div class="doc doc-children">
+<div class="doc doc-children">
 
 
 
@@ -5425,6 +5890,7 @@
               Bases: <code><span title="typing_extensions.TypedDict">TypedDict</span></code></p>
 
 
+
         <p>Parameters for continuing a request with authentication.</p>
 
 
@@ -5437,7 +5903,7 @@
 
 
 
-  <div class="doc doc-children">
+<div class="doc doc-children">
 
 
 
@@ -5516,6 +5982,7 @@
               Bases: <code><span title="typing_extensions.TypedDict">TypedDict</span></code></p>
 
 
+
         <p>Parameters for continuing a response.</p>
 
 
@@ -5528,7 +5995,7 @@
 
 
 
-  <div class="doc doc-children">
+<div class="doc doc-children">
 
 
 
@@ -5673,6 +6140,7 @@
               Bases: <code><span title="typing_extensions.TypedDict">TypedDict</span></code></p>
 
 
+
         <p>Parameters for getting response body.</p>
 
 
@@ -5685,7 +6153,7 @@
 
 
 
-  <div class="doc doc-children">
+<div class="doc doc-children">
 
 
 
@@ -5742,6 +6210,7 @@
               Bases: <code><span title="typing_extensions.TypedDict">TypedDict</span></code></p>
 
 
+
         <p>Parameters for taking response body as stream.</p>
 
 
@@ -5754,7 +6223,7 @@
 
 
 
-  <div class="doc doc-children">
+<div class="doc doc-children">
 
 
 
@@ -5811,6 +6280,7 @@
               Bases: <code><span title="typing_extensions.TypedDict">TypedDict</span></code></p>
 
 
+
         <p>Result for getResponseBody command.</p>
 
 
@@ -5823,7 +6293,7 @@
 
 
 
-  <div class="doc doc-children">
+<div class="doc doc-children">
 
 
 
@@ -5902,6 +6372,7 @@
               Bases: <code><span title="typing_extensions.TypedDict">TypedDict</span></code></p>
 
 
+
         <p>Result for takeResponseBodyAsStream command.</p>
 
 
@@ -5914,7 +6385,7 @@
 
 
 
-  <div class="doc doc-children">
+<div class="doc doc-children">
 
 
 
@@ -5986,7 +6457,7 @@
 
 
 
-  <div class="doc doc-children">
+<div class="doc doc-children">
 
 
 
@@ -6056,6 +6527,7 @@
               Bases: <code><span title="str">str</span></code>, <code><span title="enum.Enum">Enum</span></code></p>
 
 
+
         <p>Events from the Fetch domain of the Chrome DevTools Protocol.</p>
 <p>This enumeration contains the names of Fetch-related events that can be
 received from the Chrome DevTools Protocol. These events provide information
@@ -6072,7 +6544,7 @@ by the client.</p>
 
 
 
-  <div class="doc doc-children">
+<div class="doc doc-children">
 
 
 
@@ -6094,7 +6566,7 @@ by the client.</p>
   </span>
 
 </h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">AUTH_REQUIRED</span> <span class="o">=</span> <span class="s1">&#39;Fetch.authRequired&#39;</span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">AUTH_REQUIRED</span> <span class="o">=</span> <span class="s1">'Fetch.authRequired'</span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
@@ -6214,7 +6686,7 @@ AuthChallengeResponse.</p>
   </span>
 
 </h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">REQUEST_PAUSED</span> <span class="o">=</span> <span class="s1">&#39;Fetch.requestPaused&#39;</span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">REQUEST_PAUSED</span> <span class="o">=</span> <span class="s1">'Fetch.requestPaused'</span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
@@ -6435,6 +6907,7 @@ from the server, the id of the request that has caused the redirect.</p>
               Bases: <code><span title="typing_extensions.TypedDict">TypedDict</span></code></p>
 
 
+
         <p>Parameters for the AuthRequired event.</p>
 
 
@@ -6447,7 +6920,7 @@ from the server, the id of the request that has caused the redirect.</p>
 
 
 
-  <div class="doc doc-children">
+<div class="doc doc-children">
 
 
 
@@ -6592,6 +7065,7 @@ from the server, the id of the request that has caused the redirect.</p>
               Bases: <code><span title="typing_extensions.TypedDict">TypedDict</span></code></p>
 
 
+
         <p>Parameters for the RequestPaused event.</p>
 
 
@@ -6604,7 +7078,7 @@ from the server, the id of the request that has caused the redirect.</p>
 
 
 
-  <div class="doc doc-children">
+<div class="doc doc-children">
 
 
 
@@ -6808,7 +7282,7 @@ from the server, the id of the request that has caused the redirect.</p>
 
 
 
-  <div class="doc doc-children">
+<div class="doc doc-children">
 
 
 
@@ -6834,6 +7308,7 @@ from the server, the id of the request that has caused the redirect.</p>
               Bases: <code><span title="str">str</span></code>, <code><span title="enum.Enum">Enum</span></code></p>
 
 
+
         <p>Stages of the request to handle.</p>
 
 
@@ -6846,7 +7321,7 @@ from the server, the id of the request that has caused the redirect.</p>
 
 
 
-  <div class="doc doc-children">
+<div class="doc doc-children">
 
 
 
@@ -6868,7 +7343,7 @@ from the server, the id of the request that has caused the redirect.</p>
   </span>
 
 </h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">REQUEST</span> <span class="o">=</span> <span class="s1">&#39;Request&#39;</span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">REQUEST</span> <span class="o">=</span> <span class="s1">'Request'</span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
@@ -6891,7 +7366,7 @@ from the server, the id of the request that has caused the redirect.</p>
   </span>
 
 </h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">RESPONSE</span> <span class="o">=</span> <span class="s1">&#39;Response&#39;</span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">RESPONSE</span> <span class="o">=</span> <span class="s1">'Response'</span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
@@ -6927,6 +7402,7 @@ from the server, the id of the request that has caused the redirect.</p>
               Bases: <code><span title="str">str</span></code>, <code><span title="enum.Enum">Enum</span></code></p>
 
 
+
         <p>Source of the authentication challenge.</p>
 
 
@@ -6939,7 +7415,7 @@ from the server, the id of the request that has caused the redirect.</p>
 
 
 
-  <div class="doc doc-children">
+<div class="doc doc-children">
 
 
 
@@ -6961,7 +7437,7 @@ from the server, the id of the request that has caused the redirect.</p>
   </span>
 
 </h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">SERVER</span> <span class="o">=</span> <span class="s1">&#39;Server&#39;</span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">SERVER</span> <span class="o">=</span> <span class="s1">'Server'</span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
@@ -6984,7 +7460,7 @@ from the server, the id of the request that has caused the redirect.</p>
   </span>
 
 </h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">PROXY</span> <span class="o">=</span> <span class="s1">&#39;Proxy&#39;</span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">PROXY</span> <span class="o">=</span> <span class="s1">'Proxy'</span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
@@ -7020,6 +7496,7 @@ from the server, the id of the request that has caused the redirect.</p>
               Bases: <code><span title="str">str</span></code>, <code><span title="enum.Enum">Enum</span></code></p>
 
 
+
         <p>The decision on what to do in response to the authorization challenge.</p>
 
 
@@ -7032,7 +7509,7 @@ from the server, the id of the request that has caused the redirect.</p>
 
 
 
-  <div class="doc doc-children">
+<div class="doc doc-children">
 
 
 
@@ -7054,7 +7531,7 @@ from the server, the id of the request that has caused the redirect.</p>
   </span>
 
 </h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">DEFAULT</span> <span class="o">=</span> <span class="s1">&#39;Default&#39;</span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">DEFAULT</span> <span class="o">=</span> <span class="s1">'Default'</span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
@@ -7077,7 +7554,7 @@ from the server, the id of the request that has caused the redirect.</p>
   </span>
 
 </h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">CANCEL_AUTH</span> <span class="o">=</span> <span class="s1">&#39;CancelAuth&#39;</span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">CANCEL_AUTH</span> <span class="o">=</span> <span class="s1">'CancelAuth'</span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
@@ -7100,7 +7577,7 @@ from the server, the id of the request that has caused the redirect.</p>
   </span>
 
 </h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">PROVIDE_CREDENTIALS</span> <span class="o">=</span> <span class="s1">&#39;ProvideCredentials&#39;</span>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">PROVIDE_CREDENTIALS</span> <span class="o">=</span> <span class="s1">'ProvideCredentials'</span>
 </span></code></pre></div>
 
     <div class="doc doc-contents ">
@@ -7136,6 +7613,7 @@ from the server, the id of the request that has caused the redirect.</p>
               Bases: <code><span title="typing_extensions.TypedDict">TypedDict</span></code></p>
 
 
+
         <p>Pattern for request interception.</p>
 
 
@@ -7148,7 +7626,7 @@ from the server, the id of the request that has caused the redirect.</p>
 
 
 
-  <div class="doc doc-children">
+<div class="doc doc-children">
 
 
 
@@ -7249,6 +7727,7 @@ from the server, the id of the request that has caused the redirect.</p>
               Bases: <code><span title="typing_extensions.TypedDict">TypedDict</span></code></p>
 
 
+
         <p>Response HTTP header entry.</p>
 
 
@@ -7261,7 +7740,7 @@ from the server, the id of the request that has caused the redirect.</p>
 
 
 
-  <div class="doc doc-children">
+<div class="doc doc-children">
 
 
 
@@ -7340,6 +7819,7 @@ from the server, the id of the request that has caused the redirect.</p>
               Bases: <code><span title="typing_extensions.TypedDict">TypedDict</span></code></p>
 
 
+
         <p>Authorization challenge for HTTP status code 401 or 407.</p>
 
 
@@ -7352,7 +7832,7 @@ from the server, the id of the request that has caused the redirect.</p>
 
 
 
-  <div class="doc doc-children">
+<div class="doc doc-children">
 
 
 
@@ -7475,6 +7955,7 @@ from the server, the id of the request that has caused the redirect.</p>
               Bases: <code><span title="typing_extensions.TypedDict">TypedDict</span></code></p>
 
 
+
         <p>Response to an AuthChallenge.</p>
 
 
@@ -7487,7 +7968,7 @@ from the server, the id of the request that has caused the redirect.</p>
 
 
 
-  <div class="doc doc-children">
+<div class="doc doc-children">
 
 
 
@@ -7634,14 +8115,15 @@ from the server, the id of the request that has caused the redirect.</p>
     
     
       
-      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.indexes", "navigation.expand", "navigation.path", "navigation.top", "toc.follow", "content.code.copy", "content.code.select", "content.tooltips", "search.highlight", "search.suggest"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.indexes", "navigation.expand", "navigation.path", "navigation.top", "toc.follow", "content.code.copy", "content.code.select", "content.tooltips", "search.highlight", "search.suggest"], "search": "../../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.c21346df.min.js"></script>
       
-        <script src="../../../scripts/termynal.js"></script>
+        <script src="../../../resources/scripts/termynal.js"></script>
       
-        <script src="../../../scripts/extra.js"></script>
+        <script src="../../../resources/scripts/extra.js"></script>
       
         <script src="https://unpkg.com/mermaid@10.0.0/dist/mermaid.min.js"></script>
       
