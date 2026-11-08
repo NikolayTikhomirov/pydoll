@@ -23,7 +23,7 @@
       
       
       <link rel="icon" href="../../../../resources/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.1">
     
     
       
@@ -3708,6 +3708,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#pydoll.utils.is_port_free" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <code class="doc-symbol doc-symbol-toc doc-symbol-function"></code>&nbsp;is_port_free
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#pydoll.utils.is_script_already_function" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -5164,6 +5175,34 @@ or missing data.</p>
 <div class="doc doc-object doc-function">
 
 
+<h3 id="pydoll.utils.is_port_free" class="doc doc-heading">
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">is_port_free</span>
+
+
+</h3>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">is_port_free</span><span class="p">(</span><span class="n">port</span><span class="p">)</span>
+</span></code></pre></div>
+
+    <div class="doc doc-contents ">
+
+        <p>Whether no process already listens on the port, on loopback or a wildcard address.</p>
+<p>A browser started on a port another one already owns cannot listen on it,
+and pydoll would end up driving the other browser. Binding is used rather
+than connecting because it answers at once on every platform; connecting
+to a closed port on Windows takes about two seconds.</p>
+<p>On POSIX the probe sets <code>SO_REUSEADDR</code>, as Chrome does for its own
+listener, so the connections a previous browser left in TIME_WAIT (up to
+a minute after it stopped) do not read as a listener. Windows takes that
+option as leave to share a port in use, so the probe there binds without it.</p>
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
 <h3 id="pydoll.utils.is_script_already_function" class="doc doc-heading">
 <code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">is_script_already_function</span>
 
@@ -5582,7 +5621,7 @@ These should be absolute paths appropriate for the current OS.</p>
       <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.indexes", "navigation.expand", "navigation.path", "navigation.top", "toc.follow", "content.code.copy", "content.code.select", "content.tooltips", "search.highlight", "search.suggest"], "search": "../../../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../../assets/javascripts/bundle.c21346df.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.a5f9d56c.min.js"></script>
       
         <script src="../../../../resources/scripts/termynal.js"></script>
       
